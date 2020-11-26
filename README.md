@@ -59,6 +59,8 @@ Proyecto Java EE 8 de ejemplo para DAGSS 2020/21
    mysql> grant all privileges on pruebas_dagss.* to dagss@localhost;
    ```
 
+# DESCARGA Y EJECUCION DEL PROYECTO
+
 * Descargar copia del proyecto desde GitHub
    ```
    git clone https://github.com/esei-si-dagss/ejemploDAGSS-20.git
