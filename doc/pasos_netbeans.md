@@ -79,6 +79,10 @@ Editar el archivo `ejemploDAGSS > Web Pages > WEB-INF > web.xml` para añadir el
             <name>useSSL</name>
             <value>false</value>
         </property>
+        <property>
+            <name>allowPublicKeyRetrieval</name>
+            <value>true</value>
+        </property>
     </data-source>
 </web-app>
 ```
