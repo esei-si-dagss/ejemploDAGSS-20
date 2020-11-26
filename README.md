@@ -9,7 +9,7 @@ Proyecto Java EE 8 de ejemplo para DAGSS 2020/21
 
 * Instalación del servidor de aplicaciones Payara 5 
   
-  * Web Payara Server: https://www.payara.fish/
+    * Web Payara Server: https://www.payara.fish/
 * Enlaces descarga (Community Edition): https://www.payara.fish/downloads/payara-platform-community-edition/
     * Seleccionar la versión `Payara Server 5.XXXX.X (Full)`
   
@@ -34,7 +34,7 @@ Proyecto Java EE 8 de ejemplo para DAGSS 2020/21
 * Descargar driver JDBC de MySQL y copiarlo en el directorio de librerias de Payara5
   
   ```
-cd /tmp
+  cd /tmp
   wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.22.zip
   unzip mysql-connector-java-8.0.22.zip
      
@@ -68,7 +68,7 @@ cd /tmp
 
 * Otra alternativa es empaquetarlo con `maven` en un archivo `.war`y desplegarlo manualmente en el servidor.
 
-  * Desde el directorio del proyecto `ejemploDAGSS`
+    * Desde el directorio del proyecto `ejemploDAGSS`
 
     ```
     cd ejemploDAGSS-20
@@ -78,9 +78,9 @@ cd /tmp
 
 
 # DOCUMENTACION
-
+ 
 * [Creación del proyecto con Netbeans paso a paso](/doc/pasos_netbeans.md)
 
 # TAREAS FUTURAS
 1. Añadir las vistas para la visualización y gestión de los anuncios 
-3. Añadir un API REST empleando JAX-RS
+2. Añadir un API REST empleando JAX-RS
