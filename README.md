@@ -66,7 +66,7 @@ Proyecto Java EE 8 de ejemplo para DAGSS 2020/21
    git clone https://github.com/esei-si-dagss/ejemploDAGSS-20.git
    ```
 
-* Abrir el proyecto en el IDE seleccionado y desplegarlo en el servidor (la aplicación estará accesible en la URL http://localhost:8080/ejemploDAGSS)
+* Abrir el proyecto en el IDE seleccionado y desplegarlo en el servidor (la aplicación estará accesible en la URL http://localhost:8080/ejemploDAGSS-20)
 
 * Otra alternativa es empaquetarlo con `maven` en un archivo `.war`y desplegarlo manualmente en el servidor.
 
