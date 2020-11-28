@@ -83,6 +83,10 @@ Editar el archivo `ejemploDAGSS > Web Pages > WEB-INF > web.xml` para añadir el
             <name>allowPublicKeyRetrieval</name>
             <value>true</value>
         </property>
+        <property>
+            <name>serverTimezone</name>
+            <value>Europe/Madrid</value>
+        </property>
     </data-source>
 </web-app>
 ```
