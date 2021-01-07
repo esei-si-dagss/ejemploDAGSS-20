@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Objects;
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,8 +12,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 @Entity
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Comentario implements Serializable {
 
     @Id
@@ -24,6 +31,8 @@ public class Comentario implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date fecha;
 
+    @XmlTransient  // Omite serializar el Anuncio
+    @JsonbTransient
     @ManyToOne
     private Anuncio anuncio;
 
@@ -39,7 +48,7 @@ public class Comentario implements Serializable {
         this.anuncio = anuncio;
         this.autor = autor;
         this.fecha = Calendar.getInstance().getTime();
-    }    
+    }
 
     public Long getId() {
         return id;
@@ -110,6 +119,5 @@ public class Comentario implements Serializable {
     public String toString() {
         return "Comentario{" + "id=" + id + ", texto=" + texto + ", fecha=" + fecha + ", autor=" + autor + '}';
     }
-    
-    
+
 }
